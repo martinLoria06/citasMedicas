@@ -49,27 +49,15 @@
           <!-- Navbar items -->
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link nav-link-icon" href="../index.html">
-                <i class="ni ni-planet"></i>
-                <span class="nav-link-inner--text">Dashboard</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav-link-icon" href="../examples/register.html">
+              <a class="nav-link nav-link-icon" href="{{route('register')}}">
                 <i class="ni ni-circle-08"></i>
-                <span class="nav-link-inner--text">Register</span>
+                <span class="nav-link-inner--text">Regístrate</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-link-icon" href="../examples/login.html">
+              <a class="nav-link nav-link-icon" href="{{route('login')}}">
                 <i class="ni ni-key-25"></i>
-                <span class="nav-link-inner--text">Login</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav-link-icon" href="../examples/profile.html">
-                <i class="ni ni-single-02"></i>
-                <span class="nav-link-inner--text">Profile</span>
+                <span class="nav-link-inner--text">Inicio de sesión</span>
               </a>
             </li>
           </ul>
@@ -77,13 +65,12 @@
       </div>
     </nav>
     <!-- Header -->
-    <div class="header bg-gradient-primary py-7 py-lg-8">
+    <div class="header bg-gradient-primary py-6 py-lg-7">
       <div class="container">
         <div class="header-body text-center mb-7">
           <div class="row justify-content-center">
             <div class="col-lg-5 col-md-6">
-              <h1 class="text-white">Welcome!</h1>
-              <p class="text-lead text-light">Use these awesome forms to login or create new account in your project for free.</p>
+              <h1 class="text-white">@yield('title','Bienvenidos')</h1>
             </div>
           </div>
         </div>
@@ -103,7 +90,7 @@
         <div class="row align-items-center justify-content-xl-between">
           <div class="col-xl-6">
             <div class="copyright text-center text-xl-left text-muted">
-              © 2018 <a href="https://www.creative-tim.com" class="font-weight-bold ml-1" target="_blank">Creative Tim</a>
+              © 2023 <a href="/" class="font-weight-bold ml-1" >{{config('app.name')}}</a>
             </div>
           </div>
           <div class="col-xl-6">

@@ -1,5 +1,7 @@
 @extends('layouts.form')
 
+@section('title', 'Iniciar Sesión')
+
 @section('content')
 
     <!-- Page content -->
@@ -10,8 +12,11 @@
 
               <div class="card-body px-lg-5 py-lg-5">
                 @if ($errors->any())
-                <div class="alert alert-danger" role="alert">
-                    <strong>Danger!</strong> This is a danger alert—check it out!
+                <div class="text-center text-muted mb-2">
+                    <h4>Se encontro el siguiente error.</h4>
+                </div>
+                <div class="alert alert-danger mb-4" role="alert">
+                   {{$errors->first()}}
                 </div>
                 @else
                 <div class="text-center text-muted mb-4">
